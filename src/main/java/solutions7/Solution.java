@@ -13,6 +13,11 @@ import java.util.Arrays;
  * Note: i and j may be equal during an operation.
  */
 public class Solution {
+    public static void main(String[] args) {
+        String[] words = {"abbb","ba","aa"};
+        Solution solution = new Solution();
+        System.out.println(solution.maxPalindromesAfterOperations(words));
+    }
     public int maxPalindromesAfterOperations(String[] words) {
 
         int[] counts = getCounts(words);
